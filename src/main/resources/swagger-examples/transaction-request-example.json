@@ -1,0 +1,8 @@
+{
+  "transactionId": "txn-test-001",
+  "userId": "fraudster001",
+  "amount": 15000.00,
+  "currency": "USD",
+  "country": "RU",
+  "timestamp": "2024-04-18T12:00:00Z"
+}
