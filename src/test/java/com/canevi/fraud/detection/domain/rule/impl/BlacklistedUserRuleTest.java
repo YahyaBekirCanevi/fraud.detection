@@ -1,7 +1,7 @@
-package com.canevi.fraud.detection.rules;
+package com.canevi.fraud.detection.domain.rule.impl;
 
-import com.canevi.fraud.detection.domain.Transaction;
-import com.canevi.fraud.detection.repository.BlacklistedUserRepository;
+import com.canevi.fraud.detection.domain.model.Transaction;
+import com.canevi.fraud.detection.infrastructure.repository.BlacklistedUserRepository;
 import org.junit.jupiter.api.Test;
 import org.junit.jupiter.api.extension.ExtendWith;
 import org.mockito.InjectMocks;

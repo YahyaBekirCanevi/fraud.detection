@@ -1,15 +1,17 @@
-package com.canevi.fraud.detection.controller;
+package com.canevi.fraud.detection.web.controller;
 
-import com.canevi.fraud.detection.domain.Transaction;
-import com.canevi.fraud.detection.engine.RuleEngine;
-import com.canevi.fraud.detection.repository.BlacklistedUserRepository;
-import com.canevi.fraud.detection.rules.*;
+import com.canevi.fraud.detection.domain.model.Transaction;
+import com.canevi.fraud.detection.domain.rule.FraudRule;
+import com.canevi.fraud.detection.domain.rule.impl.BlacklistedUserRule;
+import com.canevi.fraud.detection.domain.rule.impl.ForeignCountryRule;
+import com.canevi.fraud.detection.domain.rule.impl.HighAmountRule;
+import com.canevi.fraud.detection.domain.rule.impl.RapidFireTransactionRule;
+import com.canevi.fraud.detection.infrastructure.repository.BlacklistedUserRepository;
+import com.canevi.fraud.detection.service.RuleEngine;
 import com.fasterxml.jackson.databind.ObjectMapper;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 import org.junit.jupiter.api.extension.ExtendWith;
-import org.mockito.InjectMocks;
-import org.mockito.Mock;
 import org.mockito.junit.jupiter.MockitoExtension;
 import org.springframework.http.MediaType;
 import org.springframework.test.web.servlet.MockMvc;

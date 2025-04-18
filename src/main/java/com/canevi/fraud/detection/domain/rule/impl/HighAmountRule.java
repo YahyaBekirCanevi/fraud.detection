@@ -1,13 +1,14 @@
-package com.canevi.fraud.detection.rules;
+package com.canevi.fraud.detection.domain.rule.impl;
 
-import com.canevi.fraud.detection.domain.FraudCheckResult;
-import com.canevi.fraud.detection.domain.Transaction;
+import com.canevi.fraud.detection.domain.model.FraudCheckResult;
+import com.canevi.fraud.detection.domain.model.Transaction;
+import com.canevi.fraud.detection.domain.rule.FraudRule;
 import org.springframework.stereotype.Component;
 
 import java.math.BigDecimal;
 
 @Component
-public class HighAmountRule implements FraudRule{
+public class HighAmountRule implements FraudRule {
     private static final BigDecimal THRESHOLD = new BigDecimal("10000");
 
     @Override

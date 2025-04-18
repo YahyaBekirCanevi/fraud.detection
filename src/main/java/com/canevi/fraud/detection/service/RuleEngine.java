@@ -1,8 +1,8 @@
-package com.canevi.fraud.detection.engine;
+package com.canevi.fraud.detection.service;
 
-import com.canevi.fraud.detection.domain.FraudCheckResult;
-import com.canevi.fraud.detection.domain.Transaction;
-import com.canevi.fraud.detection.rules.FraudRule;
+import com.canevi.fraud.detection.domain.model.FraudCheckResult;
+import com.canevi.fraud.detection.domain.model.Transaction;
+import com.canevi.fraud.detection.domain.rule.FraudRule;
 import lombok.AllArgsConstructor;
 import org.springframework.stereotype.Service;
 

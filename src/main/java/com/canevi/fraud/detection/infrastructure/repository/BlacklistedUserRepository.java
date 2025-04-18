@@ -1,6 +1,6 @@
-package com.canevi.fraud.detection.repository;
+package com.canevi.fraud.detection.infrastructure.repository;
 
-import com.canevi.fraud.detection.entity.BlacklistedUser;
+import com.canevi.fraud.detection.infrastructure.entity.BlacklistedUser;
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.stereotype.Repository;
 

@@ -1,8 +1,8 @@
-package com.canevi.fraud.detection.controller;
+package com.canevi.fraud.detection.web.controller;
 
-import com.canevi.fraud.detection.domain.FraudCheckResult;
-import com.canevi.fraud.detection.domain.Transaction;
-import com.canevi.fraud.detection.engine.RuleEngine;
+import com.canevi.fraud.detection.domain.model.FraudCheckResult;
+import com.canevi.fraud.detection.domain.model.Transaction;
+import com.canevi.fraud.detection.service.RuleEngine;
 import io.swagger.v3.oas.annotations.Operation;
 import io.swagger.v3.oas.annotations.tags.Tag;
 import org.springframework.web.bind.annotation.PostMapping;

@@ -1,4 +1,4 @@
-package com.canevi.fraud.detection.domain;
+package com.canevi.fraud.detection.domain.model;
 
 import lombok.AllArgsConstructor;
 import lombok.Data;
