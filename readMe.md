@@ -12,3 +12,5 @@ A fraud detection system built with Spring Boot and JUnit 5. It detects fraudule
 - JUnit 5 (Unit Testing)
 - H2 Database (In-memory database)
 - Swagger/OpenAPI (API Documentation)
+
+Every request must send ``X-User-Id`` header

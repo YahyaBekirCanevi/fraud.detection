@@ -6,6 +6,7 @@ import com.canevi.fraud.detection.infrastructure.entity.BlacklistedUser;
 import io.swagger.v3.oas.annotations.tags.Tag;
 import lombok.RequiredArgsConstructor;
 import org.springframework.http.ResponseEntity;
+import org.springframework.security.access.prepost.PreAuthorize;
 import org.springframework.web.bind.annotation.*;
 
 import java.util.List;
@@ -18,6 +19,7 @@ public class BlacklistedUserController {
     private final BlacklistedUserService service;
 
     @PostMapping
+    @PreAuthorize("hasRole('ADMIN')")
     public ResponseEntity<BlacklistedUser> addUser(@RequestBody BlacklistUserDTO user) {
         return ResponseEntity.ok(service.addUser(user));
     }
